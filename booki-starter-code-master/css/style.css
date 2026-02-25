@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    background-color: white;
 }
 
 :root {
@@ -380,6 +379,12 @@ footer h3 {
     .hebergements {
         width: 100%;
     }
+    .hebergements-cards{
+        width: 100%;
+    }
+    .hebergements-cards .card {
+        width: 100%;
+    }
 
     .populaires {
         width: 100%;
@@ -407,5 +412,44 @@ footer h3 {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container {
+        padding: 0 0px; /* réduit le padding sur les côtés */
+    }
+    .filtres {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+    }
+    .hebergements{
+        background-color: white;
+        border-radius: 0%;
+    }
+    .hebergements-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .hebergements-cards .card {
+        width: 100%;
+   }
+   .populaires {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;   
+        width: 100%;
+        gap: 20px;
+    }
+    .populaires-cards .card {
+        width: 100%;
+        height: 146px;
+    }
+    .activites-cards {
+        grid-template-columns: 1fr;
+    }
     /* ... */
 }
