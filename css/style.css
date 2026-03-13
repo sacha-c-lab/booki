@@ -82,6 +82,7 @@ nav a {
     font-size: 16px;
     padding-bottom: 5px;
     padding-top: 15px;
+    border-top: transparent 3px solid;
 }
 
 /* Soulignement bleu en haut au survol */
@@ -483,7 +484,6 @@ footer h3 {
     }
 
     .filtres button {
-        font-size: auto;
         height: 40px;
         width: auto;
     }
@@ -549,8 +549,9 @@ footer h3 {
     * {
         box-sizing: border-box;
     }
-
-    /* Pas de padding sur le conteneur en mobile */
+    body {
+        margin: 0;
+    }
     .main-container {
         padding: 0;
         width: 100%;
@@ -584,6 +585,7 @@ footer h3 {
         padding: 15px 0;
         border-bottom: none;
         margin-bottom: -3px;
+        border-bottom: transparent 3px solid;
     }
 
     /* Survol : bordure bleue en bas sur mobile */
@@ -645,7 +647,6 @@ footer h3 {
         justify-items: center;
         height: 50px;
         width: 47%;
-        font-size: auto;
     }
 
     .info {
